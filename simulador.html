@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreditSmart | Buscador</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>🍏 Simulador de créditos</h1>
+      <nav class="main-nav">
+        <a href="index.html">(⏳ HOME)</a>
+        <a href="simulador.html" class="active">(🔎 SIMULADOR)</a>
+        <a href="solicitar.html">(📊 SOLICITAR)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Encuentra el crédito ideal para ti</h2>
+      <p>Busca por nombre del producto o filtra según el rango de monto.</p>
+    </section>
+
+    <!-- Filtros -->
+    <section class="form">
+      <fieldset>
+        <legend>Buscar crédito</legend>
+        <label for="search">Nombre del crédito:</label>
+        <input type="text" id="search" placeholder="Ej: vivienda, vehículo, educativo..." />
+
+        <label for="monto">Filtrar por monto:</label>
+        <select id="monto">
+          <option value="todos">Todos los rangos</option>
+          <option value="bajo">Menos de $10.000.000</option>
+          <option value="medio">Entre $10.000.000 y $50.000.000</option>
+          <option value="alto">Más de $50.000.000</option>
+        </select>
+
+        <div class="form-actions">
+          <button class="btn" id="filtrar">Filtrar</button>
+          <button class="btn outline" id="limpiar">Limpiar</button>
+        </div>
+      </fieldset>
+    </section>
+
+    <!-- Resultados -->
+    <section class="cards" id="resultados">
+      <!-- Créditos generados dinámicamente desde main.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 CreditSmart - Todos los derechos reservados.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

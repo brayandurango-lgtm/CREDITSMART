@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreditSmart | Solicitar</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>🍏 Solicitud de crédito</h1>
+    <nav class="main-nav">
+      <a href="index.html">(⏳ HOME)</a>
+      <a href="simulador.html">(🔎 SIMULADOR)</a>
+      <a href="solicitar.html" class="active">(📊 SOLICITAR)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="form-section">
+    <h2>Formulario de solicitud</h2>
+
+    <form class="form">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label>Nombre completo <input type="text" required></label>
+        <label>Cédula <input type="number" required></label>
+        <label>Email <input type="email" required></label>
+        <label>Teléfono móvil o fijo <input type="tel" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos del crédito</legend>
+        <label>Tipo de crédito
+          <select required>
+            <option value="">Seleccione...</option>
+            <option>Crédito libre inversión</option>
+            <option>Crédito vehículo</option>
+            <option>Crédito vivienda</option>
+            <option>Crédito educativo</option>
+            <option>Crédito empresarial</option>
+          </select>
+        </label>
+        <label>Monto solicitado <input type="number" required></label>
+        <label>Plazo en meses
+          <select required>
+            <option value="">Seleccione...</option>
+            <option>12</option>
+            <option>24</option>
+            <option>36</option>
+            <option>48</option>
+            <option>60</option>
+          </select>
+        </label>
+        <label>Destino del crédito <textarea rows="3" placeholder="Describa el propósito del crédito..."></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos laborales</legend>
+        <label>Empresa donde trabaja <input type="text"></label>
+        <label>Cargo <input type="text"></label>
+        <label>Ingresos mensuales <input type="number" placeholder="$"></label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Enviar solicitud</button>
+        <button type="reset" class="btn outline">Limpiar formulario</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 CreditSmart - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
