@@ -9,4 +9,4 @@ function CreditCard({ nombre, descripcion, imagen }) {
   );
 }
 
-export default CreditCard;
+export default CreditCard; 
